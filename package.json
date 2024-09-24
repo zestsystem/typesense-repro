@@ -1,0 +1,26 @@
+{
+    "name": "unite-the-culture",
+    "version": "1.0.0",
+    "repository": "https://github.com/unite-the-culture/utc.git",
+    "author": "Mike Yim",
+    "license": "UNLICENSED",
+    "private": true,
+    "workspaces": [
+        "my-app/**/*",
+        "infra/**/*"
+    ],
+    "resolutions": {
+        "axios": "0.26.1"
+    },
+    "devDependencies": {
+        "@types/node": "20.12.13",
+        "eslint-plugin-isaacscript": "^3.12.2",
+        "import": "^0.0.6",
+        "prettier": "^3.3.3",
+        "typescript": "~5.3.3"
+    },
+    "dependencies": {
+        "@tailwindcss/forms": "^0.5.7"
+    },
+    "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
+}

@@ -1,0 +1,24 @@
+{
+    "name": "@utc/typesense",
+    "private": true,
+    "version": "1.0.0",
+    "description": "Typesense library for Typescript projects for UTC",
+    "type": "module",
+    "exports": {},
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "rm -rf dist && tsc --build ./tsconfig.json",
+        "migrate": "tsx ./src/migrate.ts",
+        "drop": "tsx ./src/drop.ts"
+    },
+    "dependencies": {
+        "typesense": "^1.8.2"
+    },
+    "devDependencies": {
+        "tsx": "^4.11.0",
+        "typescript": "^5.5.4"
+    },
+    "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
+}
