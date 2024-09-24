@@ -27,7 +27,7 @@
         default = pkgs.mkShell {
           buildInputs = with pkgs; [
             nodejs_20
-            corepackEnable
+            yarn-berry
             docker-compose
           ];
           shellHook = ''

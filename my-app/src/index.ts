@@ -1,6 +1,7 @@
 import { serve } from "@hono/node-server";
 import { Hono } from "hono";
 import { Client } from "typesense";
+import { nanoid } from "nanoid";
 
 const app = new Hono();
 
@@ -25,7 +26,7 @@ app.get("/", async (c) => {
             .documents()
             .import([
                 {
-                    id: "65OhIDFEa1QQdVqyoiX2n",
+                    id: nanoid(),
                     name: "Awesome Duo",
                     imageUrl: null,
                     size: 2,
